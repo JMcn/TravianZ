@@ -2,7 +2,7 @@
 <?php
 
 $online = mysql_num_rows(mysql_query("SELECT * FROM " . TB_PREFIX . "users WHERE " . time() . "-timestamp < (60*10) AND tribe!=0 AND tribe!=4 AND tribe!=5"));
-$users = mysql_num_rows(mysql_query("SELECT SQL_CACHE * FROM ".TB_PREFIX."active"))-1;
+$users = mysql_num_rows(mysql_query("SELECT * FROM ".TB_PREFIX."users WHERE "."access=2 OR access=0"));
 ?>
 
 <div class="news">
