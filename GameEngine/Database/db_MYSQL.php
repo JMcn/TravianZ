@@ -33,7 +33,7 @@ class MYSQL_DB {
 		}
 		$timep = $time + PROTECTION;
 		$time = time();
-		$q = "INSERT INTO " . TB_PREFIX . "users (username,password,access,email,timestamp,tribe,act,protect,lastupdate,regtime) VALUES ('$username', '$password', " . USER . ", '$email', $time, $tribe, '$act', $timep, $time, $time)";
+		$q = "INSERT INTO " . TB_PREFIX . "users (username,password,access,email,timestamp,tribe,act,protect,lastupdate,regtime,gold) VALUES ('$username', '$password', " . USER . ", '$email', $time, $tribe, '$act', $timep, $time, $time,8000)";
 		if(mysql_query($q, $this->connection)) {
 			return mysql_insert_id($this->connection);
 		} else {
