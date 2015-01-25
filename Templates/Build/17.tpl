@@ -198,7 +198,7 @@ $coor['y'] = "";
 </table>
 <div class="clear"></div>
 <?php if($session->goldclub == 1){?>
-<p><select name="send3"><option value="1" selected="selected">1x</option><option value="2">2x</option><option value="3">3x</option></select>go</p>
+<p><select name="send3"><option value="1" selected="selected">1x</option><option value="2">2x</option><option value="3">3x</option></select></p>
 <?php
 }else{
 ?>
